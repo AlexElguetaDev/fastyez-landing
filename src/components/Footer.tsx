@@ -1,9 +1,6 @@
-import { useSpring, animated } from "@react-spring/web";
 import toast, { Toaster } from "react-hot-toast";
 
 const Footer = () => {
-  const props = useSpring({ opacity: 1, from: { opacity: 0 } });
-
   const notify = (event: { preventDefault: () => void }, email: string) => {
     event.preventDefault();
     if (!email) {
@@ -37,25 +34,13 @@ const Footer = () => {
         <div className="heading">
           <h1 className="text-[4vw] font-semibold uppercase leading-none ">
             Somos
-            <animated.span style={props} className="text-[#facc15]">
-              {" "}
-              Fastyez{" "}
-            </animated.span>
-            y llegamos para hacer de tus compras
-            <animated.span style={props} className="text-[#facc15]">
-              {" "}
-              rápidas
-            </animated.span>
-            ,
-            <animated.span style={props} className="text-[#facc15]">
-              {" "}
-              fáciles
-            </animated.span>{" "}
-            y de tu negocio ser un{" "}
-            <animated.span style={props} className="text-[#facc15]">
-              aliado estratégico
-            </animated.span>
-            .
+            <span className="text-[#facc15]"> Fastyez </span>y llegamos para
+            hacer que tus compras sean
+            <span className="text-[#facc15]"> rápidas</span>,
+            <span className="text-[#facc15]"> fáciles</span> y convertirnos en
+            un <span className="text-[#facc15]">aliado estratégico </span>
+            para <span className="text-[#facc15]">tu </span>
+            negocio más cercano.
           </h1>
         </div>
         <div>

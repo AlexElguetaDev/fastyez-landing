@@ -4,7 +4,7 @@ import fastyez from "../assets/fastyez.svg";
 import SvgIcon from "./SvgIcon";
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [__, setIsScrolled] = useState(false);
   const [scrollDirection, setScrollDirection] = useState("up");
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <AnimatePresence>
-      {isScrolled && scrollDirection === "up" && (
+      {scrollDirection === "up" && (
         <motion.div
           className="fixed z-50 w-full px-20 py-1 flex justify-between items-center backdrop-blur-md bg-opacity-40 bg-white"
           initial={{ y: "-100%" }}

@@ -20,7 +20,7 @@ const About = () => {
     },
   }); */
   return (
-    <div className="w-full p-20 bg-zinc-800 rounded-tl-3xl text-white">
+    <div className="w-full p-20 bg-zinc-800 text-white">
       <div className="">
         <h1 className="text-[4vw] font-bold leading-none mb-2 text-[#facc15]">
           Misión
