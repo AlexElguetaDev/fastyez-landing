@@ -25,6 +25,7 @@ const App = () => {
             construcción. Por favor, visita nuestro sitio en un dispositivo de
             escritorio para la mejor experiencia.
           </p>
+          <p className="mt-4">Hablemos +56940956827</p>
         </div>
       </div>
     );
